@@ -5,5 +5,7 @@ declare namespace Cypress {
   interface Chainable {
     getColumnBySource(source: string, type: 'head' | 'body'): void;
     getFilterBySource(source: string): void;
+    expandDatagridRow(lineNumber: number): void;
+    expandAllDatagrid(): void;
   }
 }

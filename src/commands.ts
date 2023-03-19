@@ -1,4 +1,4 @@
-import { RaList, RadataGridTbody, RaDataGridTheader } from './selectors'
+import { RaList, RadataGridTbody, RaDataGridTheader, RaDatagridRowExpand } from './selectors'
 
 Cypress.Commands.add('getColumnBySource', (source, type) => {
   if (type === 'head') {
@@ -8,8 +8,14 @@ Cypress.Commands.add('getColumnBySource', (source, type) => {
   }
 });
 
-
 Cypress.Commands.add('getFilterBySource', (source) => {
     RaList.find(`ìnput[name="${source}"]`)
 })
 
+Cypress.Commands.add('expandDatagridRow', (lineNumber) => {
+  RaDatagridRowExpand.eq(lineNumber + 1).click()
+})
+
+Cypress.Commands.add('expandAllDatagrid', () => {
+  RaDatagridRowExpand.eq(0).click()
+})
