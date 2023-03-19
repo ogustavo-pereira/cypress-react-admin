@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["es6", "dom"],
-    "types": ["cypress","node"],
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "module": "commonjs",
+    "lib": ["ES2015", "DOM"],
+    "declaration": false,
+    "outDir": "./dist/",
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["cypress"],
+    "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "**/**/*.ts"
-  ]
+  "include": ["./src", "index.d.ts"]
 }
