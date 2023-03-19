@@ -1,0 +1,24 @@
+{
+  "name": "cypress-react-admin",
+  "version": "0.1.0",
+  "description": "a lib of utils commands for react admin",
+  "main": "index.ts",
+  "repository": "git@github.com:oguhpereira/cypress-react-admin.git",
+  "author": "oguhpereira <oguhpereira@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix .",
+    "format": "prettier --write \"**/*.js\""
+  },
+  "cypress": {
+    "baseUrl": "http://localhost:3000",
+    "supportFile": "dist/index.js"
+  },
+  "devDependencies": {
+    "@types/cypress": "^1.1.3",
+    "cypress": "^12.8.1",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4",
+    "typescript": "^5.0.2"
+  }
+}
