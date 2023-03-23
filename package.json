@@ -1,6 +1,6 @@
 {
   "name": "cypress-react-admin",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "a lib of utils commands for react admin",
   "main": "index.ts",
   "repository": "git@github.com:oguhpereira/cypress-react-admin.git",
@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --fix .",
-    "format": "prettier --write \"**/*.js\""
+    "format": "prettier --write \"**/*.js\"",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "cypress": {
     "baseUrl": "http://localhost:3000",
