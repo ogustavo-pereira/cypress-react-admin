@@ -7,5 +7,6 @@ declare namespace Cypress {
     getFilterBySource(source: string): Cypress.Chainable;
     expandDatagridRow(lineNumber: number): void;
     expandAllDatagrid(): void;
+    getRaInput(source: string): Cypress.Chainable;
   }
 }

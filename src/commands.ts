@@ -19,3 +19,7 @@ Cypress.Commands.add('expandDatagridRow', (lineNumber) => {
 Cypress.Commands.add('expandAllDatagrid', () => {
   RaDatagridRowExpand().eq(0).click()
 })
+
+Cypress.Commands.add('getRaInput', (source) => {
+  cy.get(`.ra-input-${source}`)
+})

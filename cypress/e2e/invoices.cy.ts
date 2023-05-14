@@ -21,7 +21,7 @@ describe('Invoices', () => {
         cy.getColumnBySource('id', 'body').eq(0).should('be.visible')
     })
 
-    it.only('Should be possible to get filter by source', () => {
+    it('Should be possible to get filter by source', () => {
         cy.getFilterBySource('date_lte').click()
     })
 
